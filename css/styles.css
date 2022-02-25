@@ -198,6 +198,8 @@ img {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    transition: color var(--time-animation) var(--time-distribution);
 }
 
 .contact-list {
@@ -214,6 +216,8 @@ img {
     display: flex;
     align-items: center;
     color: var(--primary-text-color);
+    transition: color var(--time-animation) var(--time-distribution);
+
 }
 
 .contact-link:hover {
@@ -307,6 +311,9 @@ img {
     letter-spacing: 0.06em;
     cursor: pointer;
     text-align: center;
+
+    transition: background-color var(--time-animation) var(--time-distribution);
+
 }
 
 .main-btn:hover,
@@ -362,26 +369,15 @@ img {
 }
 
 .item-img {
+    position: relative;
     flex-basis: calc(100% / 3 - 30px);
-}
-
-.activity-wrraper1 {
-    position: relative;
-}
-
-.activity-wrraper2 {
-    position: relative;
-}
-
-.activity-wrraper3 {
-    position: relative;
 }
 
 .activity-description {
     position: absolute;
     bottom: 0;
-    left: 30px;
-    right: 0;
+    left: 0;
+    width: 100%;
 
 
     display: block;
@@ -444,6 +440,9 @@ img {
 
 .team-icon-link {
     color: var(--icon-color);
+
+    transition: color var(--time-animation) var(--time-distribution), background-color var(--time-animation) var(--time-distribution);
+
 }
 
 .team-icon-link:hover,
@@ -500,6 +499,8 @@ img {
 
 .clients-icon {
     fill: currentColor;
+    transition: color var(--time-animation) var(--time-distribution), border var(--time-animation) var(--time-distribution);
+
 }
 
 
@@ -543,6 +544,8 @@ img {
 
 .address-link[target="_blank"] {
     color: var(--white-text-color);
+    transition: color var(--time-animation) var(--time-distribution);
+
 }
 
 .address-link:hover,
@@ -571,6 +574,7 @@ img {
 
 .footer-icon {
     fill: var(--white-text-color);
+    transition: background-color var(--time-animation) var(--time-distribution);
 }
 
 .footer-icon-link:hover,
@@ -604,6 +608,9 @@ img {
     background-color: var(--secondary-background-color);
     border: none;
     border-radius: 4px;
+
+    transition: color var(--time-animation) var(--time-distribution), background-color var(--time-animation) var(--time-distribution), box-shadow var(--time-animation) var(--time-distribution);
+
 }
 
 .btn-portfolio:hover,
@@ -624,9 +631,13 @@ img {
     flex-basis: calc(100% / 3 - 30px);
 }
 
+.works-link {
+    display: block;
+    transition: box-shadow var(--time-animation) var(--time-distribution)
+}
+
 .works-link:hover,
 .works-link:focus {
-    display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
