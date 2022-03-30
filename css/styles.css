@@ -494,6 +494,7 @@ img {
     border-radius: 4px;
     
     color: var(--icon-color);
+    transition: color var(--time-animation) var(--time-distribution);   
 } 
 
 
@@ -534,18 +535,16 @@ img {
 }
 
 .address {
-    margin-top: 20px;
     font-style: inherit;
 }
 
 .address-link {
-    color: var(--light-grey-rgba);
+    color: var(--light-grey-rgba); 
+    transition: color var(--time-animation) var(--time-distribution);
 }
 
 .address-link[target="_blank"] {
     color: var(--white-text-color);
-    transition: color var(--time-animation) var(--time-distribution);
-
 }
 
 .address-link:hover,
@@ -569,7 +568,8 @@ img {
 
 
 .footer-icon-link {
-    background: rgba(255, 255, 255, 0.1)
+    background: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--time-animation) var(--time-distribution);
 }
 
 .footer-icon {
